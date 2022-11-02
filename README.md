@@ -1,5 +1,5 @@
 # moonclass
-A simple function wrapper for Moonscript's class system, written in Moonscript.
+A simple function wrapper for Moonscript/Yuescript's class system, written in Moonscript.
 
 Moonscript class usage is pretty limited on the Lua side of things, because Moonscript generates all the code that creates a class every time a class is created. To fix this, moonclass takes advantage of the fact that Moonscript classes are just fancy tables. When moonclass is compiled to Lua, it contains all the code that creates and extends classes, and its functions return tables that would be considered classes to Moonscript code.
 
